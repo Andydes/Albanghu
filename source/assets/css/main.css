@@ -234,7 +234,7 @@ h1,
     font-weight: var(--h1-weight);
     line-height: 1.2;
     font-family: var(--h1-font);
-    color: var(--primary-t-color);
+    color:#ffff;
     -ms-word-wrap: break-word;
     word-wrap: break-word;
 }
@@ -1790,7 +1790,7 @@ header {
     z-index: 5;
     height: 50px;
     padding: 0;
-    background-color: var(--nav-top-bg-color);
+    background-color: #173968;
 }
 
 .navbar.sub {
