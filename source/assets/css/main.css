@@ -1956,7 +1956,7 @@ header .navbar-expand .navbar-brand .featured .first {
     min-height: 35px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
     padding: 0.35rem 1rem;
     font-size: 0.9rem;
     font-weight: 400;
@@ -2046,6 +2046,7 @@ header .navbar-expand .navbar-brand .featured .first {
     transition-timing-function: ease;
     transition-duration: .4s;
     transition-property: opacity, transform;
+    border-radius: 5px;
 }
 
 .dropdown-menu .dropdown-menu {
