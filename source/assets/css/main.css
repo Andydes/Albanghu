@@ -983,36 +983,75 @@ aside {
     bottom: 15px;
     left: 15px;
     background: #fff;
-    padding: 10px;
+    padding: 10px 15px;
     border-radius: 5px;
     border: 1px solid #1f4880;
     display: flex;
     gap: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    z-index: 9999; 
 }
 
 .lang img {
-    width: 30px; /* Ajusta el tamaño según sea necesario */
+    width: 30px; 
     height: auto;
     cursor: pointer;
 }
 
 .lang a {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
+    padding-bottom: 5px;
 }
 
 .lang a.lang_active::after {
     content: '';
     display: block;
     position: absolute;
-    bottom: -5px; /* Ajusta según el espaciado que necesites */
+    bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-    width: 80%; /* Ajusta el ancho de la barra según sea necesario */
-    height: 3px; /* Ajusta el grosor de la barra según sea necesario */
-    background-color: #1f4880; /* Color de la barra */
+    width: 80%;
+    height: 3px;
+    background-color: #1f4880;
     border-radius: 2px;
+}
+
+/* Media queries para responsive design */
+@media (max-width: 768px) {
+    .lang {
+        bottom: 10px;
+        left: 10px;
+        padding: 8px 12px;
+        gap: 8px;
+    }
+
+    .lang img {
+        width: 25px; 
+    }
+
+    .lang a.lang_active::after {
+        width: 70%; 
+    }
+}
+
+@media (max-width: 480px) {
+    .lang {
+        bottom: 5px;
+        left: 5px;
+        padding: 6px 8px;
+        gap: 6px;
+    }
+
+    .lang img {
+        width: 20px; 
+    }
+
+    .lang a.lang_active::after {
+        width: 60%; 
+    }
 }
 
 
